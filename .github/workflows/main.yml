@@ -26,14 +26,14 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: "/*******  HASH_ID *******/"
+          find: "/**  HASH_ID **/"
           replace: "${{ github.sha }}"
           regex: false
 
       - name: Find and Replace1
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: "/*******  HASH_DATE *******/"
+          find: "/**  HASH_DATE **/"
           replace: "${{ steps.date.outputs.date }}"
           regex: false
       
